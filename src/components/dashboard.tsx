@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { CardTitle, CardDescription, CardHeader, CardContent, Card } from "@/components/ui/card"
 
-export function dashboard() {
+export function Dashboard() {
   return (
     <div className="flex flex-col md:flex-row min-h-screen bg-gray-100 dark:bg-gray-800">
       <aside className="w-full md:w-64 bg-white dark:bg-gray-900 md:h-screen md:sticky md:top-0 overflow-auto">
