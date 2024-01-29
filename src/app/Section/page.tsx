@@ -26,7 +26,7 @@ export default function Section() {
       // Process the form submission logic here
       console.log("Form submitted with input:", inputValue);
       // Navigate to the specified link
-      window.location.href = "/Dashboard";
+      window.location.href = "/Tracker";
     }
   };
 
