@@ -93,7 +93,7 @@ export function Dashboard() {
 }
 
 
-function BriefcaseIcon(props) {
+function BriefcaseIcon(props:any) {
   return (
     <svg
       {...props}
