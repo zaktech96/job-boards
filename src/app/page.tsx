@@ -2,7 +2,6 @@
 "use Client"
 import Link from 'next/link';
 import Nav from '../components/ui/nav';
-
 import { UserButton } from "@clerk/nextjs";
 
 export default function Home() {
@@ -13,7 +12,7 @@ export default function Home() {
 
   
       <Nav />
-       {/* <UserButton afterSignOutUrl="/"/> */}
+        <UserButton afterSignOutUrl="/"/>
       <h1 className="text-5xl font-bold mb-4">Job Board</h1>
       <p className="text-lg">
         Welcome to our Job Board! Find exciting opportunities and take the next
@@ -21,7 +20,7 @@ export default function Home() {
       </p>
 
       <Link href="/Test"> 
-        <button className="mt-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <button className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
           Go to Input Page
         </button>
       </Link>
