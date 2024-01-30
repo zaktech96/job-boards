@@ -4,6 +4,7 @@
  */
 import Link from "next/link"
 import { Input } from "@/components/ui/input"
+import Image from 'next/image';
 import { Button } from "@/components/ui/button"
 import { CardTitle, CardHeader, CardContent, Card } from "@/components/ui/card"
 import { TableHead, TableRow, TableHeader, TableCell, TableBody, Table } from "@/components/ui/table"
@@ -33,17 +34,13 @@ export function Tracker() {
             </div>
           </form>
           <Button className="rounded-full" size="icon" variant="ghost">
-            <img
-              alt="Avatar"
-              className="rounded-full"
-              height="32"
-              src="/placeholder.svg"
-              style={{
-                aspectRatio: "32/32",
-                objectFit: "cover",
-              }}
-              width="32"
-            />
+              <Image
+    alt="Avatar"
+    className="rounded-full"
+    height={32}
+    src="/placeholder.svg"
+    width={32}
+  />
             <span className="sr-only">Toggle user menu</span>
           </Button>
         </div>
@@ -143,7 +140,7 @@ export function Tracker() {
 }
 
 
-function Package2Icon(props) {
+function Package2Icon(props:any) {
   return (
     <svg
       {...props}
@@ -165,7 +162,7 @@ function Package2Icon(props) {
 }
 
 
-function SearchIcon(props) {
+function SearchIcon(props:any) {
   return (
     <svg
       {...props}
@@ -186,7 +183,7 @@ function SearchIcon(props) {
 }
 
 
-function UsersIcon(props) {
+function UsersIcon(props:any) {
   return (
     <svg
       {...props}
@@ -209,7 +206,7 @@ function UsersIcon(props) {
 }
 
 
-function CalendarDaysIcon(props) {
+function CalendarDaysIcon(props:any) {
   return (
     <svg
       {...props}
@@ -238,7 +235,7 @@ function CalendarDaysIcon(props) {
 }
 
 
-function CreditCardIcon(props) {
+function CreditCardIcon(props:any) {
   return (
     <svg
       {...props}
@@ -259,7 +256,7 @@ function CreditCardIcon(props) {
 }
 
 
-function ActivityIcon(props) {
+function ActivityIcon(props:any) {
   return (
     <svg
       {...props}
