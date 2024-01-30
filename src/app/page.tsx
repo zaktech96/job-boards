@@ -2,19 +2,18 @@
 "use Client"
 import Link from 'next/link';
 import Nav from '../components/ui/nav';
-import { Progress } from "@/components/ui/progress"
+
 import { UserButton } from "@clerk/nextjs";
 
 export default function Home() {
   return (
        
     <main className="flex flex-col items-center justify-center min-h-screen p-24">
-   <Progress value={33} />
 
-      <UserButton afterSignOutUrl="/" />
- 
 
+  
       <Nav />
+       {/* <UserButton afterSignOutUrl="/"/> */}
       <h1 className="text-5xl font-bold mb-4">Job Board</h1>
       <p className="text-lg">
         Welcome to our Job Board! Find exciting opportunities and take the next
