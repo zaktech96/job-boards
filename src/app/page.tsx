@@ -21,7 +21,7 @@ export default function Home() {
       </p>
 
       <Link href="/Test"> 
-        <button className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <button className="mt-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
           Go to Input Page
         </button>
       </Link>
