@@ -15,7 +15,7 @@ export default function Home() {
       <Nav />
       <UserButton afterSignOutUrl="/" />
       
-      <Next13ProgressBar height="4px" color="#0A2FFF" options={{ showSpinner: true }} showOnShallow />
+      <Next13ProgressBar height="10px" color="#0A2FFF" options={{ showSpinner: true }} showOnShallow />
       
       <h1 className="text-5xl font-bold mb-4">Job Board</h1>
       <p className="text-lg">
