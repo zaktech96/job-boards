@@ -1,16 +1,22 @@
-import { Progress } from "@/components/ui/progress";
+"use client"
+
 import Link from 'next/link';
 import Nav from '../components/ui/nav';
-import { UserButton } from "@clerk/nextjs";
- // Importing useRouter from next/navigation
+import { UserButton } from "@clerk/nextjs"
+import { Next13ProgressBar } from 'next13-progressbar';
+
 
 export default function Home() {
 
   return (
+ 
+       
     <main className="flex flex-col items-center justify-center min-h-screen p-24">
-      <Progress value={33} style={{ backgroundColor: 'black', color: 'white' }} />
       <Nav />
       <UserButton afterSignOutUrl="/" />
+      
+      <Next13ProgressBar height="4px" color="#0A2FFF" options={{ showSpinner: true }} showOnShallow />
+      
       <h1 className="text-5xl font-bold mb-4">Job Board</h1>
       <p className="text-lg">
         Welcome to our Job Board! Find exciting opportunities and take the next
@@ -22,5 +28,8 @@ export default function Home() {
         </button>
       </Link>
     </main>
+   
+  
+    
   );
 }

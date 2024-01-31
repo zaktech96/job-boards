@@ -2,6 +2,7 @@
 // Import necessary dependencies
 import { useState } from 'react';
 import { Input } from "@/components/ui/input";
+import { Next13ProgressBar } from 'next13-progressbar';
 
 
 // Create the functional component
@@ -35,6 +36,7 @@ export default function Inputs() {
         <h1 className="text-2xl font-bold mb-6">Input Form</h1>
 
         {/* Input component */}
+         <Next13ProgressBar height="4px" color="#0A2FFF" options={{ showSpinner: true }} showOnShallow />
         <Input
           onChange={(e) => handleInputChange(e.target.value)}
         />
@@ -51,7 +53,9 @@ export default function Inputs() {
           className="mt-6 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300"
         >
           Go to Input Page
-          </button>
+        </button>
+        
+          
             {/* </Link> */}
       </div>
     </main>
