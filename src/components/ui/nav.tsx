@@ -1,6 +1,8 @@
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 export default function Nav() {
+
   return (
     <nav className="fixed top-0 left-0 z-50 w-full p-4 border-b backdrop-blur-2xl">
       <div className="mx-auto flex items-center justify-between font-mono text-sm lg:flex lg:items-end lg:p-4 lg:rounded-xl lg:border">
