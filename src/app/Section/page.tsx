@@ -4,7 +4,7 @@
 // Import necessary dependencies
 import { useState } from 'react';
 import { Input } from "@/components/ui/input";
-import Link from 'next/link';
+
 
 // Create the functional component
 // add submit succession 
@@ -26,7 +26,7 @@ export default function Section() {
       // Process the form submission logic here
       console.log("Form submitted with input:", inputValue);
       // Navigate to the specified link
-      window.location.href = "/Tracker";
+      window.location.href = "/Visa";
     }
   };
 
@@ -34,7 +34,7 @@ export default function Section() {
   return (
     <main className="flex flex-col items-center justify-center min-h-screen p-10">
       <div className="max-w-md w-full bg-white rounded-lg shadow-lg p-6">
-        <h1 className="text-2xl font-bold mb-6">Input Form</h1>
+        <h1 className="text-2xl font-bold mb-6">Type in Location</h1>
 
         {/* Input component */}
         <Input

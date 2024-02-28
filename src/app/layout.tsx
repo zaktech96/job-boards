@@ -1,5 +1,4 @@
 import { ClerkProvider } from '@clerk/nextjs'
-import Providers from './providers';
 import './globals.css'
  
 export default function RootLayout({
@@ -7,12 +6,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  return (
+  return (        
     <ClerkProvider>
       <html lang="en">
         <body>{children}</body>
       </html>
     </ClerkProvider>
-  
   )
 }
