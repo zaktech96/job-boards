@@ -27,6 +27,7 @@
 // }
 import { Checkbox } from "@/components/ui/checkbox";
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function Visa() {
   const [visaRequired1, setVisaRequired1] = useState(false);
@@ -51,8 +52,13 @@ export default function Visa() {
       </div>
       <div onClick={handleContainerClick2} className={`bg-white p-6 rounded-lg flex items-center justify-center space-x-4 cursor-pointer ${visaRequired2 ? 'border border-blue-500' : ''}`}>
         <Checkbox checked={visaRequired2} onChange={handleContainerClick2} />
-        <span className="text-lg font-semibold">I require a visa</span>
+        <span className="text-lg font-semibold">No require a visa</span>
       </div>
+  <Link href="/Start"> 
+   <button className="mt-7 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Go to Input Page
+        </button>
+      </Link>
     </main>
   );
 }
