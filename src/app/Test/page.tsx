@@ -30,50 +30,50 @@ export default function Inputs() {
 <div className="flex justify-center">
   <div className="grid grid-cols-2 gap-4">
     <button
-      className={`cursor-pointer ${selectedReasons.includes('Alignment') ? 'bg-blue-500 text-white' : 'bg-gray-200 text-black'} py-2 px-4 rounded border border-gray-300 mr-2 mb-2`}
+      className={`cursor-pointer ${selectedReasons.includes('Alignment') ? 'bg-blue-500 text-white' : 'bg-gray-200 text-black'} py-2 px-4 rounded border border-gray-300`}
       onClick={() => handleReasonSelection('Alignment')}
     >
       Alignment
     </button>
     <button
-      className={`cursor-pointer ${selectedReasons.includes('Challenge') ? 'bg-blue-500 text-white' : 'bg-gray-200 text-black'} py-2 px-4 rounded border border-gray-300 mr-2 mb-2`}
+      className={`cursor-pointer ${selectedReasons.includes('Challenge') ? 'bg-blue-500 text-white' : 'bg-gray-200 text-black'} py-2 px-4 rounded border border-gray-300`}
       onClick={() => handleReasonSelection('Challenge')}
     >
       Challenge
     </button>
     <button
-      className={`cursor-pointer ${selectedReasons.includes('Impact') ? 'bg-blue-500 text-white' : 'bg-gray-200 text-black'} py-2 px-4 rounded border border-gray-300 mr-2 mb-2`}
+      className={`cursor-pointer ${selectedReasons.includes('Impact') ? 'bg-blue-500 text-white' : 'bg-gray-200 text-black'} py-2 px-4 rounded border border-gray-300`}
       onClick={() => handleReasonSelection('Impact')}
     >
       Impact
     </button>
     <button
-      className={`cursor-pointer ${selectedReasons.includes('Diverstiy and inclusion') ? 'bg-blue-500 text-white' : 'bg-gray-200 text-black'} py-2 px-4 rounded border border-gray-300 mr-2 mb-2`}
+      className={`cursor-pointer ${selectedReasons.includes('Diverstiy and inclusion') ? 'bg-blue-500 text-white' : 'bg-gray-200 text-black'} py-2 px-4 rounded border border-gray-300`}
       onClick={() => handleReasonSelection('Diverstiy and inclusion')}
     >
       Diversity and Inclusion
     </button>
     <button
-      className={`cursor-pointer ${selectedReasons.includes('Development and progress') ? 'bg-blue-500 text-white' : 'bg-gray-200 text-black'} py-2 px-4 rounded border border-gray-300 mr-2 mb-2`}
+      className={`cursor-pointer ${selectedReasons.includes('Development and progress') ? 'bg-blue-500 text-white' : 'bg-gray-200 text-black'} py-2 px-4 rounded border border-gray-300`}
       onClick={() => handleReasonSelection('Development and progress')}
     >
       Development and Progress
     </button>
     <button
-      className={`cursor-pointer ${selectedReasons.includes('recognition and reward') ? 'bg-blue-500 text-white' : 'bg-gray-200 text-black'} py-2 px-4 rounded border border-gray-300 mr-2 mb-2`}
+      className={`cursor-pointer ${selectedReasons.includes('recognition and reward') ? 'bg-blue-500 text-white' : 'bg-gray-200 text-black'} py-2 px-4 rounded border border-gray-300`}
       onClick={() => handleReasonSelection('recognition and reward')}
     >
       Recognition and Reward
     </button>
     <button
-      className={`cursor-pointer ${selectedReasons.includes('Great Team work') ? 'bg-blue-500 text-white' : 'bg-gray-200 text-black'} py-2 px-4 rounded border border-gray-300 mr-10 mb-2`}
+      className={`cursor-pointer ${selectedReasons.includes('Great Team work') ? 'bg-blue-500 text-white' : 'bg-gray-200 text-black'} py-2 px-4 rounded border border-gray-300`}
       onClick={() => handleReasonSelection('Great Team work')}
     >
       Great Team Work
           </button>
           
-            <button
-      className={`cursor-pointer ${selectedReasons.includes('Great Team work') ? 'bg-blue-500 text-white' : 'bg-gray-200 text-black'} py-2 px-4 rounded border border-gray-300 mr-10 mb-2`}
+           <button
+      className={`cursor-pointer ${selectedReasons.includes('Great Team work') ? 'bg-blue-500 text-white' : 'bg-gray-200 text-black'} py-2 px-4 rounded border border-gray-300`}
       onClick={() => handleReasonSelection('Great Team work')}
     >
       Great Team Work
@@ -81,13 +81,14 @@ export default function Inputs() {
   </div>
 </div>
 
-         <button
-        onClick={handleSubmit}
-        className="mt-6 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300"
-        disabled={selectedReasons.length !== 3} // Disable button until exactly three reasons are selected
-      >
-        Go to Input Page
-      </button>
+<button
+  onClick={handleSubmit}
+  className="mt-6 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300"
+  disabled={selectedReasons.length !== 3} // Disable button until exactly three reasons are selected
+>
+  Go to Input Page
+</button>
+
     </main>
   );
 }
