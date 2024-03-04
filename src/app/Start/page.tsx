@@ -46,7 +46,7 @@ export default function Start() {
         </button>
           </div>
           
-            <Link href="/Select"> 
+            <Link href="/DropDown"> 
         <button className="mt-7 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
           Go to Select page 
         </button>
