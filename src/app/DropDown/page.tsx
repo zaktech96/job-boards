@@ -47,7 +47,10 @@ export default function DropDown() {
   const [value, setValue] = React.useState("")
 
     return (
-           <main className="flex flex-col items-center justify-center min-h-screen p-24">
+        <main className="flex flex-col items-center justify-center min-h-screen p-24">
+            <h1  className="text-3xl font-bold mb-4">
+                select which job you like to apply for
+            </h1>
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
         <Button

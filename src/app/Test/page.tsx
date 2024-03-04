@@ -73,10 +73,10 @@ export default function Inputs() {
           </button>
           
            <button
-      className={`cursor-pointer ${selectedReasons.includes('Great Team work') ? 'bg-blue-500 text-white' : 'bg-gray-200 text-black'} py-2 px-5 rounded border border-gray-300`}
-      onClick={() => handleReasonSelection('Great Team work')}
+      className={`cursor-pointer ${selectedReasons.includes('Salary expectation') ? 'bg-blue-500 text-white' : 'bg-gray-200 text-black'} py-2 px-4 rounded border border-gray-300`}
+      onClick={() => handleReasonSelection('Salary expectation')}
     >
-      Great Team Work
+    Salary expectation
     </button>
   </div>
 </div>
