@@ -21,8 +21,8 @@ import {
 
 const frameworks = [
   {
-    value: "next.js",
-    label: "Next.js",
+    value: "test",
+    label: "test",
   },
   {
     value: "sveltekit",
