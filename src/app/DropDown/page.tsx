@@ -2,6 +2,7 @@
 "use client"
 
 import * as React from "react"
+import Link from "next/link"
 import { Check, ChevronsUpDown } from "lucide-react"
 
 import { cn } from "@/lib/utils"
@@ -19,26 +20,28 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover"
 
+// ask obaid why one has to be lowercase and the other has to be uppercase
+
 const frameworks = [
   {
-    value: "next.js",
-    label: "Next.js",
+    value: "software engineer",
+    label: "Software engineer",
   },
   {
-    value: "sveltekit",
-    label: "SvelteKit",
+    value: "frontend engineer",
+    label: "Frontend engineer",
   },
   {
-    value: "nuxt.js",
-    label: "Nuxt.js",
+    value: "cloud engineer",
+    label: "Cloud engineer",
   },
   {
-    value: "remix",
-    label: "Remix",
+    value: "backend engineer",
+    label: "Backend engineer",
   },
   {
-    value: "astro",
-    label: "Astro",
+    value: "devOps engineer",
+    label: "DevOps engineer",
   },
 ]
 
@@ -91,7 +94,12 @@ export default function DropDown() {
           </CommandGroup>
         </Command>
       </PopoverContent>
-            </Popover>
+        </Popover>
+         <Link href="/Dashboard"> 
+        <button className="mt-7 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Go to Input Page
+        </button>
+      </Link>
             </main>
   )
 }

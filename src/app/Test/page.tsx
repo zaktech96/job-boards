@@ -1,7 +1,7 @@
 
 'use client'
 import React, { useState } from 'react';
-import { Next13ProgressBar } from 'next13-progressbar';
+
 
 export default function Inputs() {
   const [selectedReasons, setSelectedReasons] = useState<string[]>([]);
@@ -20,11 +20,12 @@ export default function Inputs() {
   };
 
   return (
+    
     <main className="flex flex-col items-center justify-center min-h-screen p-10">
+
       <h1 className="text-2xl font-bold mb-6">Select Important Aspects</h1>
 
-      <Next13ProgressBar height="4px" color="#0A2FFF" options={{ showSpinner: true }} showOnShallow />
-     
+ 
 
         
 <div className="flex justify-center">

@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { Input } from "@/components/ui/input";
 
 
+
 // Create the functional component
 // add submit succession 
 export default function Section() {
@@ -33,6 +34,7 @@ export default function Section() {
   // Return the JSX markup
   return (
     <main className="flex flex-col items-center justify-center min-h-screen p-10">
+            
       <div className="max-w-md w-full bg-white rounded-lg shadow-lg p-6">
         <h1 className="text-2xl font-bold mb-6">Type in Location</h1>
 

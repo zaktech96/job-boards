@@ -10,13 +10,12 @@ import { Next13ProgressBar } from 'next13-progressbar';
 export default function Home() {
 
   return (
- 
-       
     <main className="flex flex-col items-center justify-center min-h-screen p-24">
+      
       <Nav />
-      <Next13ProgressBar height="10px" color="#0A2FFF" options={{ showSpinner: true }} showOnShallow />
-      {/* <UserButton afterSignOutUrl="/" /> */}
-          <UserButton />
+      <Next13ProgressBar height="10px" color="#0A2FFF" startPosition={0.3} stopDelayMs={200} options={{ showSpinner: true }} showOnShallow />
+      <UserButton afterSignOutUrl="/" />
+    
       <h1 className="text-5xl font-bold mb-4">Job Board</h1>
       <p className="text-lg">
         Welcome to our Job Board! Find exciting opportunities and take the next
