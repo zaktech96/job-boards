@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Nav from '../components/ui/nav';
 import { UserButton } from "@clerk/nextjs"
 import { Next13ProgressBar } from 'next13-progressbar';
+import ProgressBar from '../components/ProgressBar/ProgressBar';
 
 
 
@@ -11,7 +12,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col items-center justify-center min-h-screen p-24">
-      
+<ProgressBar />
       <Nav />
       <Next13ProgressBar height="10px" color="#0A2FFF" startPosition={0.3} stopDelayMs={200} options={{ showSpinner: true }} showOnShallow />
       <UserButton afterSignOutUrl="/" />
